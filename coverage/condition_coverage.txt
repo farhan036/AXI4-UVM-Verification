@@ -1,0 +1,41 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/dut
+=== Design Unit: work.axi4
+=================================================================================
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       9         9         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top/dut --
+
+  File axi4.v
+----------------Focused Condition View-------------------
+Line       175 Item    1  (write_addr_valid && ~write_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       239 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       251 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       268 Item    1  (read_burst_cnt > 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       274 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+
+
+Total Coverage By Instance (filtered view): 100.00%
+

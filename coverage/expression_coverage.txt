@@ -1,0 +1,41 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/dut
+=== Design Unit: work.axi4
+=================================================================================
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      5         5         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /top/dut --
+
+  File axi4.v
+----------------Focused Expression View-----------------
+Line       65 Item    1  (((write_addr_F & 4095) + ((write_burst_len + 1) << write_size)) > 4095)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       66 Item    1  (((read_addr_F & 4095) + ((read_burst_len + 1) << read_size)) > 4095)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       69 Item    1  ((write_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       70 Item    1  ((read_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       262 Item    1  (read_burst_cnt == 0)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+
+
+
+Total Coverage By Instance (filtered view): 100.00%
+

@@ -1,0 +1,86 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/dut
+=== Design Unit: work.axi4
+=================================================================================
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       8         8         0   100.00%
+    FSM Transitions                  8         8         0   100.00%
+
+================================FSM Details================================
+
+FSM Coverage for instance /top/dut --
+
+FSM_ID: write_state
+    Current State Object : write_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 148              W_IDLE                   0
+ 166              W_ADDR                   1
+ 172              W_DATA                   2
+ 203              W_RESP                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  W_IDLE                 921          
+                  W_ADDR                 651          
+                  W_DATA                 651          
+                  W_RESP                 651          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 162                   0                 651          W_IDLE -> W_ADDR              
+ 169                   1                 651          W_ADDR -> W_DATA              
+ 186                   3                 651          W_DATA -> W_RESP              
+ 207                   5                 651          W_RESP -> W_IDLE              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+FSM_ID: read_state
+    Current State Object : read_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 219              R_IDLE                   0
+ 237              R_ADDR                   1
+ 245              R_WAIT                   2
+ 249              R_DATA                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  R_IDLE                 951          
+                  R_ADDR                 681          
+                  R_WAIT                 681          
+                  R_DATA                 681          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 233                   0                 681          R_IDLE -> R_ADDR              
+ 243                   1                 681          R_ADDR -> R_WAIT              
+ 246                   3                 681          R_WAIT -> R_DATA              
+ 283                   5                 681          R_DATA -> R_IDLE              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+
+
+Total Coverage By Instance (filtered view): 100.00%
+

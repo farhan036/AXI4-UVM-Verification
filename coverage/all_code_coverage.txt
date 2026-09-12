@@ -1,0 +1,435 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/dut/mem_inst
+=== Design Unit: work.axi4_memory
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top/dut/mem_inst
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_memory.v
+------------------------------------IF Branch------------------------------------
+    24                                     88342     Count coming in to IF
+    24              1                        173     
+    26              1                      66306     
+                                           21863     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                     66306     Count coming in to IF
+    27              1                      20866     
+    29              1                      45440     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       7         7         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top/dut/mem_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_memory.v
+    23              1                      88342     
+    25              1                        173     
+    28              1                      20866     
+    30              1                      45440     
+    36              1                          1     
+    36              2                       1024     
+    37              1                       1024     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        156       156         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/dut/mem_inst --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+
+Total Node Count     =         78 
+Toggled Node Count   =         78 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (156 of 156 bins)
+
+=================================================================================
+=== Instance: /top/dut
+=== Design Unit: work.axi4
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        32        32         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4.v
+------------------------------------IF Branch------------------------------------
+    104                                   179627     Count coming in to IF
+    104             1                        269     
+    139             1                     179358     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    147                                   179358     Count coming in to CASE
+    148             1                      94250     
+    166             1                        651     
+    172             1                      83805     
+    203             1                        651     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    153                                    94250     Count coming in to IF
+    153             1                        651     
+                                           93599     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    173                                    83805     Count coming in to IF
+    173             1                      42228     
+                                           41577     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    175                                    42228     Count coming in to IF
+    175             1                      20866     
+                                           21362     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    184                                    42228     Count coming in to IF
+    184             1                        651     
+    195             1                      41577     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    189                                      651     Count coming in to IF
+    189             1                        213     
+    191             1                        438     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    218                                   179358     Count coming in to CASE
+    219             1                      89099     
+    237             1                        681     
+    245             1                        681     
+    249             1                      88896     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    224                                    89099     Count coming in to IF
+    224             1                        681     
+                                           88418     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    239                                      681     Count coming in to IF
+    239             1                        455     
+                                             226     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    251                                    88896     Count coming in to IF
+    251             1                      46678     
+    256             1                      42218     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    264                                    88896     Count coming in to IF
+    264             1                      44448     
+                                           44448     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    268                                    44448     Count coming in to IF
+    268             1                      43767     
+    280             1                        681     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    274                                    43767     Count coming in to IF
+    274             1                      22884     
+                                           20883     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       9         9         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top/dut --
+
+  File axi4.v
+----------------Focused Condition View-------------------
+Line       175 Item    1  (write_addr_valid && ~write_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       239 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       251 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       268 Item    1  (read_burst_cnt > 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       274 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      5         5         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /top/dut --
+
+  File axi4.v
+----------------Focused Expression View-----------------
+Line       65 Item    1  (((write_addr_F & 4095) + ((write_burst_len + 1) << write_size)) > 4095)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       66 Item    1  (((read_addr_F & 4095) + ((read_burst_len + 1) << read_size)) > 4095)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       69 Item    1  ((write_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       70 Item    1  ((read_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       262 Item    1  (read_burst_cnt == 0)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       8         8         0   100.00%
+    FSM Transitions                  8         8         0   100.00%
+
+================================FSM Details================================
+
+FSM Coverage for instance /top/dut --
+
+FSM_ID: write_state
+    Current State Object : write_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 148              W_IDLE                   0
+ 166              W_ADDR                   1
+ 172              W_DATA                   2
+ 203              W_RESP                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  W_IDLE                 921          
+                  W_ADDR                 651          
+                  W_DATA                 651          
+                  W_RESP                 651          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 162                   0                 651          W_IDLE -> W_ADDR              
+ 169                   1                 651          W_ADDR -> W_DATA              
+ 186                   3                 651          W_DATA -> W_RESP              
+ 207                   5                 651          W_RESP -> W_IDLE              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+FSM_ID: read_state
+    Current State Object : read_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 219              R_IDLE                   0
+ 237              R_ADDR                   1
+ 245              R_WAIT                   2
+ 249              R_DATA                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  R_IDLE                 951          
+                  R_ADDR                 681          
+                  R_WAIT                 681          
+                  R_DATA                 681          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 233                   0                 681          R_IDLE -> R_ADDR              
+ 243                   1                 681          R_ADDR -> R_WAIT              
+ 246                   3                 681          R_WAIT -> R_DATA              
+ 283                   5                 681          R_DATA -> R_IDLE              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      90        90         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4.v
+    61              1                        178     
+    62              1                        176     
+    65              1                        739     
+    66              1                        767     
+    69              1                      42302     
+    70              1                      44528     
+    103             1                     179627     
+    106             1                        269     
+    107             1                        269     
+    108             1                        269     
+    109             1                        269     
+    111             1                        269     
+    112             1                        269     
+    113             1                        269     
+    114             1                        269     
+    115             1                        269     
+    118             1                        269     
+    119             1                        269     
+    120             1                        269     
+    121             1                        269     
+    122             1                        269     
+    123             1                        269     
+    126             1                        269     
+    127             1                        269     
+    128             1                        269     
+    129             1                        269     
+    130             1                        269     
+    131             1                        269     
+    132             1                        269     
+    133             1                        269     
+    134             1                        269     
+    135             1                        269     
+    141             1                     179358     
+    142             1                     179358     
+    149             1                      94250     
+    150             1                      94250     
+    151             1                      94250     
+    155             1                        651     
+    156             1                        651     
+    157             1                        651     
+    158             1                        651     
+    159             1                        651     
+    161             1                        651     
+    162             1                        651     
+    168             1                        651     
+    169             1                        651     
+    177             1                      20866     
+    178             1                      20866     
+    179             1                      20866     
+    180             1                      20866     
+    185             1                        651     
+    186             1                        651     
+    190             1                        213     
+    192             1                        438     
+    194             1                        651     
+    197             1                      41577     
+    198             1                      41577     
+    205             1                        651     
+    206             1                        651     
+    207             1                        651     
+    208             1                        651     
+    220             1                      89099     
+    221             1                      89099     
+    222             1                      89099     
+    226             1                        681     
+    227             1                        681     
+    228             1                        681     
+    229             1                        681     
+    230             1                        681     
+    232             1                        681     
+    233             1                        681     
+    240             1                        455     
+    241             1                        455     
+    243             1                        681     
+    246             1                        681     
+    252             1                      46678     
+    253             1                      46678     
+    254             1                      46678     
+    255             1                      46678     
+    257             1                      42218     
+    258             1                      42218     
+    261             1                      88896     
+    262             1                      88896     
+    265             1                      44448     
+    270             1                      43767     
+    271             1                      43767     
+    275             1                      22884     
+    276             1                      22884     
+    282             1                        681     
+    283             1                        681     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        612       612         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/dut --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+
+Total Node Count     =        306 
+Toggled Node Count   =        306 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (612 of 612 bins)
+
+
+Total Coverage By Instance (filtered view): 100.00%
+
